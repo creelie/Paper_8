@@ -37,7 +37,7 @@ Conjectures 1, 2 and 6 independently.
 
 ## Layout
 
-- `paper/main.tex`, `paper/figures/`: the LaTeX source and the two figures; `paper/main.pdf` the compiled paper (12 pages, single column).
+- `paper/main.tex`, `paper/figures/`: the LaTeX source and the two figures; `paper/main.pdf` the compiled paper (11 pages, amsart, single column).
 - `dist/`: the paper as `WormaldHamiltonCycles_final2.pdf`, its source zip and the arXiv tarball.
 - `checks/c/regtour.c`: lists the regular tournaments on at most 9 vertices by the characteristic polynomial of S; its output is `checks/data/classes*.txt`, the source of Table 1.
 - `checks/python/wormald_hessian.py`: computes H from Wormald's definition in exact rational arithmetic and compares it with Theorem 1.1 on 41 tournaments.

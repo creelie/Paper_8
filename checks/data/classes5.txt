@@ -1,0 +1,2 @@
+total 4 distinct 1
+poly 1 0 10 0 5 0 count 4 mat 01100 00110 00011 10001 11000

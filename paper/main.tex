@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,reqno]{amsart}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -10,6 +10,7 @@
 \usepackage[margin=28mm]{geometry}
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
+\usepackage{orcidlink}
 \usepackage{microtype}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -35,38 +36,36 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\E}{\mathbb{E}}
 
-\title{Two conjectures of Wormald on Hamilton cycles in tournaments}
+\title[Two conjectures of Wormald on Hamilton cycles]{Two conjectures of Wormald on Hamilton cycles in tournaments}
 
-\author{Deep Bhattacharjee\thanks{Corresponding author. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}. ORCID: \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}\\[2pt]
-\normalsize Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL),\\
-\normalsize Bhubaneswar, Odisha 751030, India\\[1pt]
-\normalsize Formerly, University of Calcutta, Senate House, 87/1 College Street,\\
-\normalsize Kolkata 700073, West Bengal, India}
+\author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
+\address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\address{Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India}
+\email{d.bhattacharjee@erl-forschung.de}
+\email{itsdeep@live.com}
+\email{egspl@proton.me}
+\thanks{\sloppy Corresponding author: Deep Bhattacharjee. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}; ORCID \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}
 
+\subjclass[2020]{05C20; 05C45; 05C50; 05C80; 15A15}
+\keywords{tournament; Hamilton cycle; random blow-up; skew-symmetric matrix}
 \date{26 October 2026}
 
 \begin{document}
-
-\maketitle
 
 \begin{abstract}
 \itshape
 A tournament is a complete graph in which every edge has been given a direction, and a Hamilton cycle in it is a directed cycle through all the vertices. Let $h(n)$ be the largest number of Hamilton cycles that a tournament on $n$ vertices can have, and let $g(n)=2^{-n}(n-1)!$ be the expected number of Hamilton cycles of a random tournament on $n$ vertices. Wormald obtained lower bounds for $h(n)$ by replacing every vertex of a fixed regular tournament $T$ on $d$ vertices by a random tournament on $n$ vertices. The expected number of Hamilton cycles of the result is governed by a number $H$, the determinant of the Hessian of a function defined implicitly by $T$; the bound is $\sqrt{d/H}\,g(dn)$, or $e^{1/d}\sqrt{d/H}\,g(dn)$ when the blocks are regular. Wormald computed $H$ for a few small tournaments, found that $d/H$ was the square of a rational number every time, and could not explain it. We prove that $H=d\det(d^2I+S^2)/\det(d^2I-S^2)$, where $S$ is the skew adjacency matrix of $T$, so that $H\neq0$ and $\sqrt{d/H}=\det(dI-S)/\det(dI-iS)$ is a ratio of two positive integers. This is his Conjecture~6. For the cyclic tournament on $d$ vertices the formula becomes $\sqrt{d/H}=\bigl((d+1)^d+(d-1)^d\bigr)/\bigl((d+i)^d+(d-i)^d\bigr)$, which tends to $\cosh1/\cos1=2.8559578925\ldots$ as $d$ grows. This is his Conjecture~2, and it identifies the constant $2.855958$ that he estimated by fitting polynomials; it also explains why the terms in $1/d$ and $1/d^3$ of his fits were nearly zero. We add bounds for $\sqrt{d/H}$ over all regular tournaments on $d$ vertices, with equality in the lower bound exactly for doubly regular tournaments. Every statement is proved by hand.
 \end{abstract}
 
-\medskip
-\noindent\textbf{Keywords.} tournament; Hamilton cycle; random blow-up; skew-symmetric matrix.
+\maketitle
 
-\smallskip
-\noindent\textbf{MSC 2020.} 05C20; 05C45; 05C50; 05C80; 15A15.
+
 
 \medskip
-\begin{center}
-\begin{minipage}{0.92\textwidth}
+\begin{quote}
 \small\sloppy
 \noindent\textbf{Note.} The results of this paper were first made public on 14 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/Breakthrough-problems-1}; later versions of that repository (\texttt{v1.0.1} of 22 October and \texttt{v1.1.0} of 25 October) are archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23567153}{10.5281/zenodo.23567153} and \href{https://doi.org/10.5281/zenodo.23631103}{10.5281/zenodo.23631103} (concept DOI \href{https://doi.org/10.5281/zenodo.23567152}{10.5281/zenodo.23567152}). An earlier and incomplete version of the paper appeared on Hexagon on 22 October 2026 as the preprint \texttt{hexagon:2610.00460}, available at \url{https://hexagonmath.org/2610.00460}. That version relied on a computer certificate and on computer checks for part of its evidence, carried a verification section, and left the scope of some statements unstated. This version is complete and self-contained: every statement is proved by hand, the scope of each result is stated, the only unrefereed sources it depends on are the paper of Wormald that states the conjectures and the two later works named next, and no statement rests on a computer. Two works posted after 14 October 2026 overlap with this one and are acknowledged here. Divoux and Wang (arXiv:2610.23755, 16 October 2026) prove, by a different method, that $h(n)\sim(\cosh1/\cos1)\,g(n)$, which is Wormald's Conjecture~5 and is stronger than the lower bound of Corollary~\ref{cor:hn}; their Proposition~7.1 is used in Section~\ref{sec:intro} for one comparison and nowhere else. Liu and Ye (\url{https://github.com/LStar404/wormald-tournament-conjectures}, first posted 19 October 2026) treat Wormald's Conjectures~1, 2 and~6 independently. The source of this revision is in the repository \url{https://github.com/creelie/Paper_8}, release \texttt{v1.0.0}, archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23659586}{10.5281/zenodo.23659586} (concept \href{https://doi.org/10.5281/zenodo.23659585}{10.5281/zenodo.23659585}), together with programs that recompute the table and the numerical values of the paper.
-\end{minipage}
-\end{center}
+\end{quote}
 
 \section{Introduction}\label{sec:intro}
 

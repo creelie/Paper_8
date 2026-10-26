@@ -10,9 +10,8 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/Paper_8"
-url: "https://github.com/creelie/Paper_8/releases/tag/v1.0.0"
-version: 1.0.0
-doi: 10.5281/zenodo.23659586
+url: "https://github.com/creelie/Paper_8/releases/tag/v1.0.1"
+version: 1.0.1
 date-released: 2026-10-26
 keywords:
   - tournament

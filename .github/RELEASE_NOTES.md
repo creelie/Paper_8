@@ -1,4 +1,4 @@
-Deep Bhattacharjee, *Two conjectures of Wormald on Hamilton cycles in tournaments*. Final revision, single column, 12 pages.
+Deep Bhattacharjee, *Two conjectures of Wormald on Hamilton cycles in tournaments*. Final revision, single column (amsart), 11 pages.
 
 The paper proves Conjectures 2 and 6 of N. C. Wormald, *Tournaments with many Hamilton cycles*
 (arXiv:2610.16245): for a regular tournament on d vertices with skew adjacency matrix S, his

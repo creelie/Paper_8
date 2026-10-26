@@ -59,7 +59,7 @@ Each release carries the paper files of `dist/`.
 
 | Release | DOI |
 | --- | --- |
-| v1.0.0 | to be recorded |
+| v1.0.0 | [10.5281/zenodo.23659586](https://doi.org/10.5281/zenodo.23659586) (concept [10.5281/zenodo.23659585](https://doi.org/10.5281/zenodo.23659585)) |
 
 ## Author
 
